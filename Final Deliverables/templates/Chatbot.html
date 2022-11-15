@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Chatbot</title>
+    <style> 
+      body{
+        margin:0px;
+      }
+    </style>
+</head>
+<body>
+  <img src="https://apptunix.wpenginepowered.com/blog/wp-content/uploads/sites/3/2021/04/show-chatbots-for-banking.jpg" width= "100%" height="100%">
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "ae0f9217-668d-4bf7-a600-5554746f8bf3", 
+      region: "au-syd",
+      serviceInstanceID: "3588054f-8f31-4f51-977a-31b2b502e7e2",
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
